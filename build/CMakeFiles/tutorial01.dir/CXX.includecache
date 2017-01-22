@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/GL/freeglut.h
+freeglut_std.h
+../includes/GL/freeglut_std.h
+freeglut_ext.h
+../includes/GL/freeglut_ext.h
+
+../includes/GL/freeglut_ext.h
+stdarg.h
+-
+
+../includes/GL/freeglut_std.h
+windows.h
+-
+GLUT/glut.h
+-
+stdlib.h
+-
+
+/Users/ssmilkshake/ogldev-osx/src/tutorial01/tutorial01.cpp
+GL/freeglut.h
+-
+
