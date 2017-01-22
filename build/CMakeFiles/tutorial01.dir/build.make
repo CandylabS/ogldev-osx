@@ -90,16 +90,6 @@ tutorial01_EXTERNAL_OBJECTS =
 
 tutorial01: CMakeFiles/tutorial01.dir/src/tutorial01/tutorial01.cpp.o
 tutorial01: CMakeFiles/tutorial01.dir/build.make
-tutorial01: /opt/X11/lib/libXrandr.dylib
-tutorial01: /opt/X11/lib/libXxf86vm.dylib
-tutorial01: /opt/X11/lib/libXinerama.dylib
-tutorial01: /opt/X11/lib/libXi.dylib
-tutorial01: /opt/X11/lib/libXcursor.dylib
-tutorial01: /opt/X11/lib/libXrandr.dylib
-tutorial01: /opt/X11/lib/libXxf86vm.dylib
-tutorial01: /opt/X11/lib/libXinerama.dylib
-tutorial01: /opt/X11/lib/libXi.dylib
-tutorial01: /opt/X11/lib/libXcursor.dylib
 tutorial01: CMakeFiles/tutorial01.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ssmilkshake/ogldev-osx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tutorial01"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tutorial01.dir/link.txt --verbose=$(VERBOSE)

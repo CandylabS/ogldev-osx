@@ -21,7 +21,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <GL/glew.h>
-#include <GL/freeglut.h>
+#include <GLUT/glut.h>
 
 #include "ogldev_util.h"
 #include "ogldev_math_3d.h"

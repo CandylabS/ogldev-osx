@@ -6,5 +6,5 @@ CXX_FLAGS =  -stdlib=libc++ -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ssmilkshake/ogldev-osx/includes -I/Users/ssmilkshake/ogldev-osx/GL -I/System/Library/Frameworks 
+CXX_INCLUDES = -I/Users/ssmilkshake/ogldev-osx/includes -I/Users/ssmilkshake/ogldev-osx/includes/assimp -I/System/Library/Frameworks 
 

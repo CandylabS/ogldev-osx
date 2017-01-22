@@ -1,3 +1,6 @@
 /Users/ssmilkshake/ogldev-osx/build/CMakeFiles/rebuild_cache.dir
+/Users/ssmilkshake/ogldev-osx/build/CMakeFiles/tutorial02.dir
 /Users/ssmilkshake/ogldev-osx/build/CMakeFiles/edit_cache.dir
 /Users/ssmilkshake/ogldev-osx/build/CMakeFiles/tutorial01.dir
+/Users/ssmilkshake/ogldev-osx/build/CMakeFiles/tutorial03.dir
+/Users/ssmilkshake/ogldev-osx/build/CMakeFiles/tutorial04.dir

@@ -16,22 +16,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeLanguageInformation.cmake"
-  "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeParseArguments.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.cmake"
-  "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckIncludeFile.cmake"
-  "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckLibraryExists.cmake"
-  "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckSymbolExists.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/Compiler/AppleClang-C.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/Compiler/Clang.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/Compiler/GNU.cmake"
-  "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/FindOpenGL.cmake"
-  "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
-  "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/FindPackageMessage.cmake"
-  "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/FindThreads.cmake"
-  "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/FindX11.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/Platform/Darwin-AppleClang-C.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/Platform/Darwin-AppleClang-CXX.cmake"
   "/usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/Platform/Darwin-Clang-C.cmake"
@@ -55,5 +45,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/tutorial02.dir/DependInfo.cmake"
   "CMakeFiles/tutorial01.dir/DependInfo.cmake"
+  "CMakeFiles/tutorial03.dir/DependInfo.cmake"
+  "CMakeFiles/tutorial04.dir/DependInfo.cmake"
   )

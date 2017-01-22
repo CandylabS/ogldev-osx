@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tutorial02.dir/src/tutorial02/tutorial02.cpp.o"
-  "bin/tutorial02/tutorial02.pdb"
-  "bin/tutorial02/tutorial02"
+  "tutorial02.pdb"
+  "tutorial02"
 )
 
 # Per-language clean rules from dependency scanning.

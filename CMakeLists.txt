@@ -12,34 +12,8 @@ if( CMAKE_BINARY_DIR MATCHES " " )
   message( "Your Build Directory contains spaces. If you experience problems when compiling, this can be the cause." )
 endif()
 
-# Compile external dependencies 
-# add_subdirectory (includes)
-
 include_directories(${CMAKE_SOURCE_DIR}/includes)
-include_directories(${CMAKE_SOURCE_DIR}/GL)
-
-if(WIN32)
-	set(LIBS glfw opengl32 libglew_static SOIL_Static assimp)
-elseif(UNIX)
-  set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall")
-  # Linux packages native to CMake
-  set(LIBS glfw)
-  list(APPEND LIBS libglew_static)
-  list(APPEND LIBS SOIL_Static)
-  list(APPEND LIBS assimp)
-  find_package(OpenGL REQUIRED)
-  list(APPEND LIBS ${OPENGL_gl_LIBRARY}) # setting LIBS for the first time
-  add_definitions(${OPENGL_DEFINITIONS})
-  find_package(X11 REQUIRED)
-  list(APPEND LIBS ${X11_Xrandr_LIB} ${X11_Xxf86vm_LIB} ${X11_Xinerama_LIB} ${X11_Xi_LIB} ${X11_Xcursor_LIB})
-  find_package(Threads REQUIRED)
-  list(APPEND LIBS ${CMAKE_THREAD_LIBS_INIT})
-  #find_library(RT_LIB rt)
-  #list(APPEND LIBS ${RT_LIB})
-  # append non-native packages
-else()
-  set(LIBS )
-endif(WIN32)
+include_directories(${CMAKE_SOURCE_DIR}/includes/assimp)
 
 # Because we use glfw3 we need to link the application with Cocoa
 IF(APPLE)
@@ -47,9 +21,10 @@ IF(APPLE)
   FIND_LIBRARY(Cocoa_LIBRARY Cocoa)
   FIND_LIBRARY(OpenGL_LIBRARY OpenGL)
   FIND_LIBRARY(IOKit_LIBRARY IOKit)
+  FIND_LIBRARY(GLUT_LIBRARY GLUT)
   FIND_LIBRARY(CoreVideo_LIBRARY CoreVideo)
   MARK_AS_ADVANCED(Cocoa_LIBRARY OpenGL_LIBRARY)
-  SET(APPLE_LIBS ${Cocoa_LIBRARY} ${IOKit_LIBRARY} ${OpenGL_LIBRARY} ${CoreVideo_LIBRARY})
+  SET(APPLE_LIBS ${Cocoa_LIBRARY} ${IOKit_LIBRARY} ${OpenGL_LIBRARY} ${CoreVideo_LIBRARY} ${GLUT_LIBRARY} -lGLEW)
   set(LIBS ${LIBS} ${APPLE_LIBS})
 ENDIF(APPLE)
 
@@ -72,5 +47,29 @@ add_executable(tutorial01
   src/tutorial01/tutorial01.cpp
 )
 target_link_libraries(tutorial01
+  ${LIBS}
+)
+
+# Tutorial 2
+add_executable(tutorial02 
+  src/tutorial02/tutorial02.cpp
+)
+target_link_libraries(tutorial02
+  ${LIBS}
+)
+
+# Tutorial 3
+add_executable(tutorial03 
+  src/tutorial03/tutorial03.cpp
+)
+target_link_libraries(tutorial03
+  ${LIBS}
+)
+
+# Tutorial 4
+add_executable(tutorial04 
+  src/tutorial04/tutorial04.cpp
+)
+target_link_libraries(tutorial04
   ${LIBS}
 )

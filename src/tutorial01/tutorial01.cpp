@@ -18,7 +18,7 @@
     Tutorial 01 - Create a window
 */
 
-#include <GL/freeglut.h>
+#include <GLUT/glut.h>
 
 static void RenderSceneCB()
 {

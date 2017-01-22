@@ -186,6 +186,9 @@ Cocoa_LIBRARY:FILEPATH=/System/Library/Frameworks/Cocoa.framework
 CoreVideo_LIBRARY:FILEPATH=/System/Library/Frameworks/CoreVideo.framework
 
 //Path to a library.
+GLUT_LIBRARY:FILEPATH=/System/Library/Frameworks/GLUT.framework
+
+//Path to a library.
 IOKit_LIBRARY:FILEPATH=/System/Library/Frameworks/IOKit.framework
 
 //Value Computed by CMake

@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tutorial02
+
+# Build rule for target.
+tutorial02: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tutorial02
+.PHONY : tutorial02
+
+# fast build rule for target.
+tutorial02/fast:
+	$(MAKE) -f CMakeFiles/tutorial02.dir/build.make CMakeFiles/tutorial02.dir/build
+.PHONY : tutorial02/fast
+
+#=============================================================================
 # Target rules for targets named tutorial01
 
 # Build rule for target.
@@ -122,6 +135,32 @@ tutorial01: cmake_check_build_system
 tutorial01/fast:
 	$(MAKE) -f CMakeFiles/tutorial01.dir/build.make CMakeFiles/tutorial01.dir/build
 .PHONY : tutorial01/fast
+
+#=============================================================================
+# Target rules for targets named tutorial03
+
+# Build rule for target.
+tutorial03: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tutorial03
+.PHONY : tutorial03
+
+# fast build rule for target.
+tutorial03/fast:
+	$(MAKE) -f CMakeFiles/tutorial03.dir/build.make CMakeFiles/tutorial03.dir/build
+.PHONY : tutorial03/fast
+
+#=============================================================================
+# Target rules for targets named tutorial04
+
+# Build rule for target.
+tutorial04: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tutorial04
+.PHONY : tutorial04
+
+# fast build rule for target.
+tutorial04/fast:
+	$(MAKE) -f CMakeFiles/tutorial04.dir/build.make CMakeFiles/tutorial04.dir/build
+.PHONY : tutorial04/fast
 
 src/tutorial01/tutorial01.o: src/tutorial01/tutorial01.cpp.o
 
@@ -150,6 +189,87 @@ src/tutorial01/tutorial01.cpp.s:
 	$(MAKE) -f CMakeFiles/tutorial01.dir/build.make CMakeFiles/tutorial01.dir/src/tutorial01/tutorial01.cpp.s
 .PHONY : src/tutorial01/tutorial01.cpp.s
 
+src/tutorial02/tutorial02.o: src/tutorial02/tutorial02.cpp.o
+
+.PHONY : src/tutorial02/tutorial02.o
+
+# target to build an object file
+src/tutorial02/tutorial02.cpp.o:
+	$(MAKE) -f CMakeFiles/tutorial02.dir/build.make CMakeFiles/tutorial02.dir/src/tutorial02/tutorial02.cpp.o
+.PHONY : src/tutorial02/tutorial02.cpp.o
+
+src/tutorial02/tutorial02.i: src/tutorial02/tutorial02.cpp.i
+
+.PHONY : src/tutorial02/tutorial02.i
+
+# target to preprocess a source file
+src/tutorial02/tutorial02.cpp.i:
+	$(MAKE) -f CMakeFiles/tutorial02.dir/build.make CMakeFiles/tutorial02.dir/src/tutorial02/tutorial02.cpp.i
+.PHONY : src/tutorial02/tutorial02.cpp.i
+
+src/tutorial02/tutorial02.s: src/tutorial02/tutorial02.cpp.s
+
+.PHONY : src/tutorial02/tutorial02.s
+
+# target to generate assembly for a file
+src/tutorial02/tutorial02.cpp.s:
+	$(MAKE) -f CMakeFiles/tutorial02.dir/build.make CMakeFiles/tutorial02.dir/src/tutorial02/tutorial02.cpp.s
+.PHONY : src/tutorial02/tutorial02.cpp.s
+
+src/tutorial03/tutorial03.o: src/tutorial03/tutorial03.cpp.o
+
+.PHONY : src/tutorial03/tutorial03.o
+
+# target to build an object file
+src/tutorial03/tutorial03.cpp.o:
+	$(MAKE) -f CMakeFiles/tutorial03.dir/build.make CMakeFiles/tutorial03.dir/src/tutorial03/tutorial03.cpp.o
+.PHONY : src/tutorial03/tutorial03.cpp.o
+
+src/tutorial03/tutorial03.i: src/tutorial03/tutorial03.cpp.i
+
+.PHONY : src/tutorial03/tutorial03.i
+
+# target to preprocess a source file
+src/tutorial03/tutorial03.cpp.i:
+	$(MAKE) -f CMakeFiles/tutorial03.dir/build.make CMakeFiles/tutorial03.dir/src/tutorial03/tutorial03.cpp.i
+.PHONY : src/tutorial03/tutorial03.cpp.i
+
+src/tutorial03/tutorial03.s: src/tutorial03/tutorial03.cpp.s
+
+.PHONY : src/tutorial03/tutorial03.s
+
+# target to generate assembly for a file
+src/tutorial03/tutorial03.cpp.s:
+	$(MAKE) -f CMakeFiles/tutorial03.dir/build.make CMakeFiles/tutorial03.dir/src/tutorial03/tutorial03.cpp.s
+.PHONY : src/tutorial03/tutorial03.cpp.s
+
+src/tutorial04/tutorial04.o: src/tutorial04/tutorial04.cpp.o
+
+.PHONY : src/tutorial04/tutorial04.o
+
+# target to build an object file
+src/tutorial04/tutorial04.cpp.o:
+	$(MAKE) -f CMakeFiles/tutorial04.dir/build.make CMakeFiles/tutorial04.dir/src/tutorial04/tutorial04.cpp.o
+.PHONY : src/tutorial04/tutorial04.cpp.o
+
+src/tutorial04/tutorial04.i: src/tutorial04/tutorial04.cpp.i
+
+.PHONY : src/tutorial04/tutorial04.i
+
+# target to preprocess a source file
+src/tutorial04/tutorial04.cpp.i:
+	$(MAKE) -f CMakeFiles/tutorial04.dir/build.make CMakeFiles/tutorial04.dir/src/tutorial04/tutorial04.cpp.i
+.PHONY : src/tutorial04/tutorial04.cpp.i
+
+src/tutorial04/tutorial04.s: src/tutorial04/tutorial04.cpp.s
+
+.PHONY : src/tutorial04/tutorial04.s
+
+# target to generate assembly for a file
+src/tutorial04/tutorial04.cpp.s:
+	$(MAKE) -f CMakeFiles/tutorial04.dir/build.make CMakeFiles/tutorial04.dir/src/tutorial04/tutorial04.cpp.s
+.PHONY : src/tutorial04/tutorial04.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -157,11 +277,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... tutorial02"
 	@echo "... edit_cache"
 	@echo "... tutorial01"
+	@echo "... tutorial03"
+	@echo "... tutorial04"
 	@echo "... src/tutorial01/tutorial01.o"
 	@echo "... src/tutorial01/tutorial01.i"
 	@echo "... src/tutorial01/tutorial01.s"
+	@echo "... src/tutorial02/tutorial02.o"
+	@echo "... src/tutorial02/tutorial02.i"
+	@echo "... src/tutorial02/tutorial02.s"
+	@echo "... src/tutorial03/tutorial03.o"
+	@echo "... src/tutorial03/tutorial03.i"
+	@echo "... src/tutorial03/tutorial03.s"
+	@echo "... src/tutorial04/tutorial04.o"
+	@echo "... src/tutorial04/tutorial04.i"
+	@echo "... src/tutorial04/tutorial04.s"
 .PHONY : help
 
 
